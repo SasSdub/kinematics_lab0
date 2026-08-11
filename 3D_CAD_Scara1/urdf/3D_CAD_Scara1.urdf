@@ -3,21 +3,21 @@
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="3D_CAD_Scara">
+  name="3D_CAD_Scara1">
   <link
-    name="world">
+    name="base_link">
     <inertial>
       <origin
-        xyz="-3.46944695195361E-18 0 0.113260302039731"
+        xyz="-6.93889390390723E-18 0 0.113260302039731"
         rpy="0 0 0" />
       <mass
         value="7.81592864600267" />
       <inertia
         ixx="0.0717820556775515"
         ixy="5.78241158658935E-19"
-        ixz="-2.48432501284219E-19"
+        ixz="1.45665661912053E-19"
         iyy="0.0717820556775515"
-        iyz="-7.96395582003538E-18"
+        iyz="-7.81090109364004E-18"
         izz="0.0419250565426863" />
     </inertial>
     <visual>
@@ -26,7 +26,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://3D_CAD_Scara/meshes/world.STL" />
+          filename="package://3D_CAD_Scara1/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -40,7 +40,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://3D_CAD_Scara/meshes/world.STL" />
+          filename="package://3D_CAD_Scara1/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -54,10 +54,10 @@
         value="8.88681009624485" />
       <inertia
         ixx="0.0336698999754297"
-        ixy="-1.64798730217797E-17"
-        ixz="-0.0276670618254063"
+        ixy="3.11437074046461E-17"
+        ixz="-0.0276670618254062"
         iyy="0.38037068204283"
-        iyz="-1.6482823259302E-18"
+        iyz="7.54962716171005E-19"
         izz="0.373774678100568" />
     </inertial>
     <visual>
@@ -66,7 +66,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://3D_CAD_Scara/meshes/Link1_Link.STL" />
+          filename="package://3D_CAD_Scara1/meshes/Link1_Link.STL" />
       </geometry>
       <material
         name="">
@@ -80,7 +80,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://3D_CAD_Scara/meshes/Link1_Link.STL" />
+          filename="package://3D_CAD_Scara1/meshes/Link1_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -89,9 +89,9 @@
     type="continuous">
     <origin
       xyz="0 0 0.22"
-      rpy="0 0 -0.26199" />
+      rpy="0 0 -0.0076361" />
     <parent
-      link="world" />
+      link="base_link" />
     <child
       link="Link1_Link" />
     <axis
@@ -106,16 +106,16 @@
     name="Link02_Link">
     <inertial>
       <origin
-        xyz="0.275083735554592 0.000101676439374088 0.00267549314958926"
+        xyz="0.275083735554592 0.000101676439374865 0.00267549314958929"
         rpy="0 0 0" />
       <mass
         value="6.45815878743564" />
       <inertia
-        ixx="0.0167219501540955"
-        ixy="-4.30217280334622E-05"
+        ixx="0.0167219501540954"
+        ixy="-4.3021728033898E-05"
         ixz="0.00475310573507189"
         iyy="0.257168736515574"
-        iyz="1.75684275238888E-06"
+        iyz="1.75684275239958E-06"
         izz="0.261837246328888" />
     </inertial>
     <visual>
@@ -124,7 +124,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://3D_CAD_Scara/meshes/Link02_Link.STL" />
+          filename="package://3D_CAD_Scara1/meshes/Link02_Link.STL" />
       </geometry>
       <material
         name="">
@@ -138,7 +138,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://3D_CAD_Scara/meshes/Link02_Link.STL" />
+          filename="package://3D_CAD_Scara1/meshes/Link02_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -147,7 +147,7 @@
     type="continuous">
     <origin
       xyz="0.55 0 0.1"
-      rpy="0 0 -1.4556" />
+      rpy="0 0 -0.091166" />
     <parent
       link="Link1_Link" />
     <child
@@ -164,16 +164,16 @@
     name="Link03_Link">
     <inertial>
       <origin
-        xyz="1.33226762955019E-15 -0.0499999999999988 -0.101043532852061"
+        xyz="0 -1.11022302462516E-16 -0.156009291893624"
         rpy="0 0 0" />
       <mass
         value="3.121" />
       <inertia
         ixx="0.0279173373972018"
-        ixy="-4.33680868994202E-19"
-        ixz="5.68894345316889E-18"
+        ixy="-3.03576608295941E-18"
+        ixz="2.0529279095095E-18"
         iyy="0.0279173373972018"
-        iyz="8.72039748829632E-19"
+        iyz="-1.29972526327343E-18"
         izz="0.00524401666666667" />
     </inertial>
     <visual>
@@ -182,7 +182,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://3D_CAD_Scara/meshes/Link03_Link.STL" />
+          filename="package://3D_CAD_Scara1/meshes/Link03_Link.STL" />
       </geometry>
       <material
         name="">
@@ -196,7 +196,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://3D_CAD_Scara/meshes/Link03_Link.STL" />
+          filename="package://3D_CAD_Scara1/meshes/Link03_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -204,7 +204,7 @@
     name="joint03_joint"
     type="prismatic">
     <origin
-      xyz="0.55 0.050125 0"
+      xyz="0.55 0.00012531 0.054965"
       rpy="0 0 0" />
     <parent
       link="Link02_Link" />
@@ -217,5 +217,58 @@
       upper="0.17503"
       effort="0"
       velocity="0" />
+  </joint>
+  <link
+    name="End_effector">
+    <inertial>
+      <origin
+        xyz="0 -2.22044604925031E-16 0.153990708106376"
+        rpy="0 0 0" />
+      <mass
+        value="3.121" />
+      <inertia
+        ixx="0.0279173373972018"
+        ixy="-3.03576608295941E-18"
+        ixz="2.05521053034246E-18"
+        iyy="0.0279173373972018"
+        iyz="-1.29460065133088E-18"
+        izz="0.00524401666666667" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://3D_CAD_Scara1/meshes/End_effector.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://3D_CAD_Scara1/meshes/End_effector.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="end_efector"
+    type="fixed">
+    <origin
+      xyz="0 0 -0.31"
+      rpy="0 0 0" />
+    <parent
+      link="Link03_Link" />
+    <child
+      link="End_effector" />
+    <axis
+      xyz="0 0 0" />
   </joint>
 </robot>
