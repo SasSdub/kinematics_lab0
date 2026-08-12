@@ -79,5 +79,36 @@ What you should see:
 If a mesh is missing, the script lists the file - fix the path or add the file, then run
 it again.
 
+### If you have the error of Numpy
 
-### If you have the error of Numpy 
+Some versions of the Robotics Toolbox for Python are not fully compatible with the latest NumPy releases. If you see errors such as `AttributeError`, `ImportError`, or messages about unsupported NumPy APIs, install a compatible NumPy version:
+
+```bash
+pip install "numpy<2"
+```
+
+If you want a known-good version, use:
+
+```bash
+pip install "numpy==1.26.4"
+```
+
+Then rerun:
+
+```bash
+pip install -r requirements.txt
+python swift_windows_fix.py
+python verify_install.py
+```
+
+If you want the extra-safe fix, uninstall NumPy first and reinstall the compatible version:
+
+```bash
+pip uninstall numpy
+pip install "numpy==1.26.4"
+pip install -r requirements.txt
+python swift_windows_fix.py
+python verify_install.py
+```
+
+This is the usual fix for newer NumPy compatibility issues with RTB on Windows.
