@@ -3,7 +3,7 @@
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="3D_CAD_Scara">
+  name="my_robot">
   <link
     name="base_link">
     <inertial>
@@ -26,7 +26,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://3D_CAD_Scara/meshes/base_link.STL" />
+          filename="package://my_robot/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -40,7 +40,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://3D_CAD_Scara/meshes/base_link.STL" />
+          filename="package://my_robot/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -66,7 +66,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://3D_CAD_Scara/meshes/Link01_Link.STL" />
+          filename="package://my_robot/meshes/Link01_Link.STL" />
       </geometry>
       <material
         name="">
@@ -80,7 +80,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://3D_CAD_Scara/meshes/Link01_Link.STL" />
+          filename="package://my_robot/meshes/Link01_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -119,7 +119,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://3D_CAD_Scara/meshes/Link02_Link.STL" />
+          filename="package://my_robot/meshes/Link02_Link.STL" />
       </geometry>
       <material
         name="">
@@ -133,7 +133,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://3D_CAD_Scara/meshes/Link02_Link.STL" />
+          filename="package://my_robot/meshes/Link02_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -172,7 +172,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://3D_CAD_Scara/meshes/Link03_Link.STL" />
+          filename="package://my_robot/meshes/Link03_Link.STL" />
       </geometry>
       <material
         name="">
@@ -186,7 +186,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://3D_CAD_Scara/meshes/Link03_Link.STL" />
+          filename="package://my_robot/meshes/Link03_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -230,7 +230,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://3D_CAD_Scara/meshes/End_efector_Link.STL" />
+          filename="package://my_robot/meshes/End_efector_Link.STL" />
       </geometry>
       <material
         name="">
@@ -244,7 +244,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://3D_CAD_Scara/meshes/End_efector_Link.STL" />
+          filename="package://my_robot/meshes/End_efector_Link.STL" />
       </geometry>
     </collision>
   </link>
