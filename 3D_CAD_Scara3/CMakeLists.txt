@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.3)
 
-project(3D_CAD_Scara1)
+project(3D_CAD_Scara3)
 
 find_package(catkin REQUIRED)
 
