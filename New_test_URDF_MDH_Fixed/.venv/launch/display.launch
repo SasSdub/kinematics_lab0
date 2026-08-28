@@ -3,7 +3,7 @@
     name="model" />
   <param
     name="robot_description"
-    textfile="$(find 3D_CAD_Scara3)/urdf/3D_CAD_Scara3.urdf" />
+    textfile="$(find my_robot)/my_robot.urdf" />
   <node
     name="joint_state_publisher_gui"
     pkg="joint_state_publisher_gui"
