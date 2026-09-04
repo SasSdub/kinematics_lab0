@@ -10,7 +10,7 @@
     name="spawn_model"
     pkg="gazebo_ros"
     type="spawn_model"
-    args="-file $(find 3D_CAD_Scara8)/urdf/3D_CAD_Scara8.urdf -urdf -model 3D_CAD_Scara8"
+    args="-file $(find 3D_CAD_Scara9)/urdf/3D_CAD_Scara9.urdf -urdf -model 3D_CAD_Scara9"
     output="screen" />
   <node
     name="fake_joint_calibration"
